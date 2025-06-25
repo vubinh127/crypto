@@ -1,0 +1,720 @@
+/* Header  */
+
+* {
+    font-family: "Inter", sans-serif;
+    color: var(--color-ffffff);
+    box-sizing: border-box;
+}
+
+:root {
+    --color-ffffff: #FFFFFF;
+    --color-0B1426: #0B1426;
+    --color-212121: #212121;
+    --color-FF8A15: #FF8A15;
+    --color-FF8A14: #FF8A14;
+    --color-8B8B8B: #8B8B8B;
+    --color-E4E7ED: #E4E7ED;
+    --color-D9D9D9: #D9D9D9;
+    --color-2E2E2E: #2E2E2E;
+    --color-575757: #575757;
+    --color-18C005: #18C005;
+    --color-000000: #000000;
+    --color-FAFAFA: #FAFAFA;
+    --color-B1B1B1: #B1B1B1;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1520px;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--color-ffffff);
+}
+
+a:hover, button:hover {
+    opacity: 0.9;
+}
+
+input:focus,
+select:focus {
+    box-shadow: unset !important;
+}
+
+header {
+    background: var(--color-0B1426);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header .navbar {
+    padding: 24px;
+}
+
+header .navbar-nav.menu {
+    align-items: center;
+    gap: 32px;
+}
+
+header .navbar .navbar-brand {
+    width: 147px;
+    height: auto;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+header .navbar .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    color: var(--color-ffffff);
+    font-size: 14px;
+    padding: 0;
+    font-weight: 500;
+}
+
+header .navbar .navbar-nav .nav-link:hover ,
+header .navbar .navbar-nav .dropdown-item:hover {
+    color: var(--color-ffffff);
+}
+
+header .navbar .navbar-nav .nav-link:hover svg path {
+    fill: var(--color-ffffff) ;
+}
+
+header .navbar .navbar-nav .nav-link:hover::after {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(94%) saturate(750%) hue-rotate(10deg);
+}
+
+.dropdown-toggle::after {
+    border: none;
+    content: url('../images/chevron-up.svg');
+    width: 14px;
+    margin-left: 9px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    header .navbar {
+        padding: 12px;
+    }
+
+    .navbar-nav.menu {
+        padding: 40px;
+    }
+
+    .navbar-nav.menu .dropdown-menu{
+        border: none;
+    }
+}
+
+/*banner  */
+ .hero-banner {
+     background-color: #010118;
+     min-height: 100vh;
+     padding: 184px 0 128px;
+     justify-content: center;
+ }
+
+.hero-banner h1 {
+    line-height: 1.2;
+}
+
+.hero-banner .btn {
+    font-size: 1rem;
+}
+
+.hero-banner li .svg_icon{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 10px;
+    background-color: #1199FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.banner-phone {
+    background: radial-gradient(45.87% 50% at 50% 50%, #3763C1 0%, rgba(35, 70, 157, 0.5) 38.39%, rgba(20, 43, 114, 0) 100%);
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.banner-phone .image{
+    max-width: 470px;
+    margin: auto;
+}
+
+.banner-phone .effect-phone {
+    perspective: 1000px;
+}
+
+.box-left {
+    width: 715px;
+}
+
+.box-left-content {
+    background: url("/assets/images/win-btc-v2.webp") center center / cover no-repeat;
+    min-height: 450px;
+    padding: 28px 56px 28px 64px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.box-left-content h5 {
+    box-sizing: border-box;
+    margin: 0px 0px 12px;
+    color: rgb(146, 209, 255);
+    text-transform: uppercase;
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+}
+
+.box-left-content .welcome-bonus-title {
+    color: rgb(255, 255, 255);
+    word-break: normal;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+    margin: 0px 0px 8px;
+    font-weight: 700;
+}
+
+.box-left-content h4 {
+    box-sizing: border-box;
+    margin: 0px 0px 24px;
+    color: rgb(201, 207, 221);
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.box-left-content a {
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 600;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 44px;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    display: inline-flex;
+    background-color: rgba(1, 1, 24, 0.5);
+    backdrop-filter: blur(6px);
+    color: rgb(255, 255, 255);
+    white-space: normal !important;
+    box-sizing: border-box;
+    margin: 0px 0px 12px;
+    border: 1px solid rgb(244, 244, 244);
+    cursor: pointer;
+    outline: none;
+    min-width: unset;
+}
+
+.box-left-content a svg {
+    margin-left: 16px;
+}
+
+.term-note {
+    box-sizing: border-box;
+    margin: 0px;
+    color: rgb(160, 169, 190);
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 155%;
+    letter-spacing: 0px;
+}
+
+
+.block_feature {
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0px 80px;
+    background: linear-gradient(rgb(1, 1, 24) 0%, rgb(0, 20, 60) 100%);
+    display: flex;
+}
+
+.box-feature {
+    max-width: 1057px;
+    margin: auto;
+}
+
+.box-right {
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 327px;
+}
+
+.box-right .feature-card  {
+    padding: 0px 24px;
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    background: url(https://mkt-site-asset.crypto.com/assets/home-page/bento-layout/dual-invest-mobile.webp) center 14px / cover no-repeat;
+    display: flex;
+}
+
+.box-right .feature-decoration {
+    width: 99%;
+    height: 20px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(9, 25, 69) 0%, rgb(13, 32, 80) 25.39%, rgb(14, 35, 82) 50.05%, rgb(11, 30, 77) 75.1%, rgb(9, 25, 69) 100%);
+}
+
+.box-right .feature-content {
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 264px;
+    display: flex;
+}
+
+.box-right h5 {
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+    color: rgb(146, 209, 255);
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+.box-right .feature-title {
+    margin: 0px 0px 12px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.8px;
+    color: rgb(255, 255, 255);
+    word-break: normal;
+    white-space: pre-wrap;
+}
+
+.box-right .feature-description {
+    margin: 0px 0px 20px;
+    text-align: center;
+    color: rgb(234, 238, 244);
+    word-break: normal;
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 145%;
+}
+
+.box-right a {
+    border: 1px solid rgb(244, 244, 244);
+    cursor: pointer;
+    outline: none;
+    min-width: unset;
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 600;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 44px;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    display: inline-flex;
+    background-color: rgba(1, 1, 24, 0.5);
+    backdrop-filter: blur(6px);
+    color: rgb(255, 255, 255);
+    white-space: normal !important;
+}
+
+.box-bottom {
+    padding: 8px 32px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.box-bottom > div {
+    font-size: 32px;
+    color: rgb(6, 17, 33);
+    line-height: 85px;
+    font-weight: 700;
+}
+
+.box-bottom > div span {
+    color: rgb(5, 119, 218);
+}
+
+.box-bottom a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 110%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background-color: rgb(5, 119, 218);
+    color: rgb(255, 255, 255);
+    height: 44px;
+    min-width: unset;
+    width: max-content;
+    border-radius: 40px;
+    display: flex;
+}
+
+.home-price-section {
+    padding: 128px 0;
+    background-color: #010118;
+}
+
+.title-section h4 {
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    color: #1199FA;
+}
+
+.title-section h2 {
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 844px;
+    margin:0 auto 24px;
+}
+
+.home-price-section .home-cta-prices {
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    min-width: unset;
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 600;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 44px;
+    border-width: 1px;
+    border-style: solid;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    display: inline-flex;
+    border-color: #F4F4F4;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.box_chart {
+    max-width: 1128px;
+    margin: auto;
+}
+
+.crypto-table {
+    width: 100%;
+    color: #ffffff;
+    background-color: #010118;
+}
+
+.crypto-row {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr 2fr 2fr 2fr;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.crypto-row:last-child {
+    border-bottom: none;
+}
+
+.crypto-info {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+.crypto-name {
+    font-size: 24px;
+    line-height: 145%;
+    font-weight: 600;
+}
+.crypto-symbol {
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 0em;
+    color: rgb(125, 125, 125);
+}
+
+.crypto-price {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.crypto-change {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 600;
+    text-align: left;
+}
+.crypto-change.positive {
+    color: #00e598;
+}
+.crypto-change.negative {
+    color: #fa4848;
+}
+
+.crypto-marketcap {
+    font-size: 16px;
+    color: #fff;
+}
+
+.crypto-chart {
+    margin: 0px 0px 0px 40px;
+}
+
+.crypto-chart svg {
+    width: 130px;
+    height: 40px;
+}
+
+.crypto-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.crypto-action .btn {
+    border-radius: 50px;
+    padding: 0.375rem 1.25rem;
+    height: 48px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(14, 33, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    max-width: 101px;
+}
+
+
+.defi-section {
+    padding: 128px 0 ;
+}
+
+.defi-section .image {
+    max-width: 496px;
+}
+
+.defi-section .defi-content {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.defi-section h6 {
+    color: #0058AA;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.defi-section h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.defi-section p {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.defi-section p span {
+    color: #7D7D7D;
+}
+
+.defi-section a {
+    padding: 0px 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    border-radius: 40px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00254F;
+    color: white;
+    border: 1px solid #00254F;
+    cursor: pointer;
+}
+
+.defi-section a.btn-get-crypto {
+    border-color: #00254F;
+    background-color: transparent;
+    color: #00254F;
+}
+
+.our-vision-section {
+    padding: 128px 0;
+    background-color: #061121;
+}
+
+.our-vision-section .image {
+    max-width: 555px;
+    margin: auto;
+}
+
+.our-vision-section .our_info span {
+    font-size: 24px;
+    line-height: 145%;
+    letter-spacing: 0em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.our-vision-section .our_info h2 {
+    color: #1199FA;
+    font-size: 48px;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+}
+
+.home-cta-about {
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 600;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 44px;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    display: flex;
+    gap: 5px;
+    background-color: rgba(1, 1, 24, 0.5);
+    backdrop-filter: blur(6px);
+    color: rgb(255, 255, 255);
+    white-space: normal !important;
+    box-sizing: border-box;
+    margin: 40px auto 12px;
+    border: 1px solid rgb(244, 244, 244);
+    cursor: pointer;
+    outline: none;
+    min-width: unset;
+}
+
+@media  screen and (max-width: 992px) {
+
+    .title-section h4,
+    .defi-section h6{
+        font-size: 14px;
+    }
+
+    .title-section h2,
+    .defi-section h2{
+        font-size: 40px;
+    }
+
+    .defi-section,
+    .our-vision-section,
+    .home-price-section {
+        padding: 80px 0;
+    }
+
+    .box-feature {
+        width: 324px;
+    }
+
+    .box-left,
+    .box-right {
+        width: 100%;
+    }
+
+    .box-left-content {
+        background: url("/assets/images/win-btc-mobile-v2.webp") center center / cover no-repeat;
+        align-items: center;
+        justify-content: start;
+        padding: 16px;
+        height: 480px;
+    }
+
+    .box-left-content .welcome-bonus-title {
+        font-size: 32px;
+    }
+
+    .box-bottom {
+        padding: 24px;
+    }
+
+    .box-bottom > div {
+        line-height: 40px;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .crypto-row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .crypto-name {
+        font-size: 17px;
+    }
+
+    .crypto-symbol {
+        font-size: 16px;
+    }
+
+    .crypto-price {
+        font-size: 23px;
+        margin: 0;
+    }
+}
